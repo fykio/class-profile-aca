@@ -41,7 +41,7 @@ jobs:
           registryUsername: ${{ secrets.CLASSPROFILEACA_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.CLASSPROFILEACA_REGISTRY_PASSWORD }}
           containerAppName: class-profile-aca
-          resourceGroup: DefaultResourceGroup-EUS
+          resourceGroup: ai-azure-aca-rg
           imageToBuild: default/[parameters('containerAppName')]:${{ github.sha }}
           _buildArgumentsKey_: |
             _buildArgumentsValues_
